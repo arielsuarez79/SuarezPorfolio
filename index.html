@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arnaldo Suarez Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <script src="https://kit.fontawesome.com/fdfef6e4f9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div  class="header">
+        
+        <nav class=".nav" >
+            <img class="logo" src="../img/logo.png" class="logo">
+            <ul class="nav-menu" id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+            
+        
+    </div>    
+    <div id="header" class="home-conteiner" class="header-text">
+        <p class="front">Frontend Developer</p>
+        <h1 class="hi">Hi, I am <span> Arnaldo </span>Suarez from Argentina</h1>
+    </div>
+
+    <!-------------about-------------> 
+    <div id="about" class="about">
+        <div class="about-container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/arnaldo3.jpeg" alt="about">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="text-about">Hi I am Arnaldo Ariel Suarez I’m looking for frontend developer position. 
+                        I achieved this semester the certificate of Web and Computer Programming from BYU Idaho University
+                        . I have no experience in this job but I am eager to apply my knowledge and know that I can achieve 
+                        and exceed your expectations. Since I was young I dreamed of developing web pages and I am achieving it. 
+                        I am responsible, teachable, trustworthy, dedicated to detail, and I work well under pressure.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link " onclick="opentab('skills')"  >Skilss</p>
+                        <p class="tab-links" onclick="opentab('education')" >Education</p>
+                        <p class="tab-links" onclick="opentab('experience')" >Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Design Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web/App Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - Current</span><br>BYU Idaho Bachelors Applied Technologies</li>
+                            <li><span>2021 - 2022</span><br>BYU Idaho Certificate Web & Computer Programming</li>
+                            <li><span>2022</span><br>BYUI Life Skills</li>
+                            
+                        </ul>
+                    </div>  
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>BYU Idaho</span><br>UI/UX Disign and develop</li>
+                            <li><span>BYU Idaho</span><br>Web/App Development</li>
+                            
+                            
+                        </ul>
+                    </div>              
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------Portfolio------------->
+    <div id="portfolio" class="portfolio">
+        <div class="portfolio-container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/work1.jpg" alt="work" srcset="">
+                    <div class="layer">
+                        <h3>MatheoWeather Web Page</h3>
+                        <p>This web page is developed with HTML, CSS and JavaScript, 
+                            the design complies with the development standards.
+                        </p>
+                        <a href="https://arielsuarez79.github.io/wdd230/lesson11/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/work2.jpg" alt="work" srcset="">
+                    <div class="layer">
+                        <h3>Tucuman Chamber Web Page</h3>
+                        <p>API and all javascript features are applied on this website
+                        </p>
+                        <a href="https://arielsuarez79.github.io/wdd230/chamber/chamber.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/work3.jpg" alt="work" srcset="">
+                    <div class="layer">
+                        <h3>Wheather App</h3>
+                        <p>In this app all the features of JavaScript are applied using an API
+                             and OOP is used for programming
+                        </p>
+                        <a href="https://arielsuarez79.github.io/WDD330-portfolio/final potfolio/src/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------Contact------------->
+    <div id="contact" class="contact">
+        <div class="contact-container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contac Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>arnaldoarielsuarez@gmail</p>
+                    <p><i class="fa-solid fa-square-phone-flip"></i>+5493814063600</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <a href="img/ArnaldoArielSuarez.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright ® Arnaldo Ariel Suarez</p>
+        </div>
+    </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for( tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for( tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script> 
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzJ14cLIxXV74WqwzD3btdbpdGNOTucDQuZjJAueLVvsSSrHmFj_BODy7mIRsnSNq8/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>  
+</body>
+</html>

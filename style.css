@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=EB+Garamond&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: black;
+    color: #fff;
+}
+.sub-title{
+    font-family: "EB Garamond";
+    font-size: 50px;
+}
+p{
+    font-family: "Comfortaa";
+}
+
+h3{
+    font-family: "EB Garamond";
+    font-size: 25px;
+}
+
+li{
+    font-family: "Comfortaa";
+}
+li a{
+    font-family: "Comfortaa";
+}
+
+/*header*/
+.header{
+    background-color: black;
+    height: 80px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+.home-conteiner{
+    padding: 200px 10%;
+}
+.about-container{
+    padding: 50px 10%;    
+}
+.portfolio-container{
+    padding: 50px 10%;    
+}
+.contact-container{
+    padding: 100px 10%; 
+}
+nav{
+    
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+    
+
+}
+
+
+.logo{
+    
+    height: 80px;
+    padding: 0 40px;
+    line-height: 80px;
+}
+/*.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 992px;
+    margin: 0 auto;
+}*/
+.nav-menu{
+    line-height: 80px;
+    
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10PX 20px;
+    
+}
+nav ul li a{
+    font-family: "Comfortaa";
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #23c3f3;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.front{
+    font-family: "EB Garamond";
+    font-size: 100px;
+}
+.header-text{
+    
+    margin-top: 15%;
+    
+}
+.header-text h1{
+    font-family: "EB Garamond";
+    font-size: 60px;
+    margin-top: 20px;
+}
+.hi{
+    font-family: "EB Garamond";
+    font-size: 60px;
+}
+.header-text h1 span{
+    color: #23c3f3;
+}
+.hi span{
+    color: #23c3f3;
+
+}
+
+/*About*/
+.about{
+    padding: 80px 0;
+    color: #fff;
+}
+.row{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 30%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 65%;
+}
+.subtitle{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.text-about{
+    font-family: "Comfortaa";
+    text-align: justify;
+}
+.tab-titles{
+    font-family: "Comfortaa";
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    font-family: "Comfortaa";
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #23c3f3;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+
+}
+.tab-contents ul li span{
+    color: #23c3f3;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+/*Portfolio*/
+
+.portfolio{
+    padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.work img{
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #23c3f3);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #23c3f3;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+
+/*Contact Me*/
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #23c3f3;
+    margin-right: 15px;
+    font-size: 25px;
+
+}
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #23c3f3;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #fff;
+    transform: translateY(-5px);
+}
+/*button .btn{
+    text-decoration: none;
+    background: #23c3f3;
+    margin: 20px 0;
+    border-radius: 5px;
+}*/
+.btn.btn2{
+    display: inline-block;
+    background: #23c3f3;
+    margin: 50px auto;
+    width: fit-content;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Comfortaa";
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+
+}
+form .btn2{
+    padding: 14px 60px;
+    font-family: "Comfortaa";
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background: #23c3f3;
+    font-weight: 300;
+    margin-top: 10px;
+}
+#msg{
+    color: green;
+    margin-top: -40px;
+    display: block;
+}
+
+/*-------------Small Screens--------*/
+nav .fa-solid{
+    display: none;
+}
+@media only screen and (max-width: 750px){
+    .home-conteiner{
+        padding: 100px 10%;
+    }
+    .front{
+        font-size: 80px;
+    }
+    .hi{
+        font-size: 60px;
+        font-family: "EB Garamond";  
+        padding-top: 20px; 
+    }
+    .hi span{
+        color: #23c3f3;
+
+    }
+    .logo{
+        height: 70px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+        max-width: 992px;
+        margin: 0 auto;
+        align-items: center;
+    }
+    
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+        
+    }
+    
+    nav ul{
+        background: #23c3f3;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .subtitle{
+        font-size: 40px;
+    }
+    .about-col-1 img{
+        width: 100%;
+        
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+
+    .about-col-1{
+        margin: 30px 10%;
+        
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+}
+
+
+
