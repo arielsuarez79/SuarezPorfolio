@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=EB+Garamond&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@ body{
     color: #fff;
 }
 .sub-title{
-    font-family: "EB Garamond";
+    font-family: "Cormorant Garamond";
     font-size: 50px;
 }
 p{
@@ -112,8 +112,9 @@ nav ul li a:hover::after{
     width: 100%;
 }
 .front{
-    font-family: "EB Garamond";
-    font-size: 100px;
+    font-family: "Cormorant Garamond";
+    font-size: 110px;
+    color: #23c3f3;
 }
 .header-text{
     
@@ -122,11 +123,11 @@ nav ul li a:hover::after{
 }
 .header-text h1{
     font-family: "EB Garamond";
-    font-size: 60px;
+    font-size: 70px;
     margin-top: 20px;
 }
 .hi{
-    font-family: "EB Garamond";
+    font-family: "Cormorant Garamond";
     font-size: 60px;
 }
 .header-text h1 span{
