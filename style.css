@@ -12,6 +12,7 @@ html{
 body{
     background: black;
     color: #fff;
+    
 }
 .sub-title{
     font-family: "Cormorant Garamond";
@@ -36,17 +37,22 @@ li a{
 /*header*/
 .header{
     background-color: black;
-    height: 80px;
+    height: 85px;
     position: fixed;
     z-index: 100;
     width: 100%;
     top: 0;
     left: 0;
+    border-bottom: 1px solid #00A8F3 ;
+    border-image: linear-gradient(0.25turn, #00A8F3, #abddf5, #00A8F3);
+    border-image-slice: 1;
 }
 
 
 .home-conteiner{
     padding: 200px 10%;
+   
+    background-image: linear-gradient(to right, #343233, #2d2b2c, #262425, #1f1d1e, #181718, #181718, #181718, #181718, #1f1d1e, #262425, #2d2b2c, #343233);
 }
 .about-container{
     padding: 50px 10%;    
@@ -102,7 +108,7 @@ nav ul li a::after{
     content: "";
     width: 0;
     height: 3px;
-    background: #23c3f3;
+    background: #00A8F3;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -114,7 +120,7 @@ nav ul li a:hover::after{
 .front{
     font-family: "Cormorant Garamond";
     font-size: 110px;
-    color: #23c3f3;
+    color: #00A8F3;
 }
 .header-text{
     
@@ -131,10 +137,10 @@ nav ul li a:hover::after{
     font-size: 60px;
 }
 .header-text h1 span{
-    color: #23c3f3;
+    color: #00A8F3;
 }
 .hi span{
-    color: #23c3f3;
+    color: #00A8F3;
 
 }
 
@@ -184,7 +190,7 @@ nav ul li a:hover::after{
     content: "";
     width: 0;
     height: 3px;
-    background: #23c3f3;
+    background: #00A8F3;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -200,7 +206,7 @@ nav ul li a:hover::after{
 
 }
 .tab-contents ul li span{
-    color: #23c3f3;
+    color: #00A8F3;
     font-size: 14px;
 }
 .tab-contents{
@@ -239,7 +245,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #23c3f3);
+    background: linear-gradient(rgba(0,0,0,0.6), #00A8F3);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -260,7 +266,7 @@ nav ul li a:hover::after{
 }
 .layer a{
     margin-top: 20px;
-    color: #23c3f3;
+    color: #00A8F3;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -288,7 +294,7 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 .contact-left p i{
-    color: #23c3f3;
+    color: #00A8F3;
     margin-right: 15px;
     font-size: 25px;
 
@@ -301,7 +307,7 @@ nav ul li a:hover::after{
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: #23c3f3;
+    color: #00A8F3;
     display: inline-block;
     transition: transform 0.5s;
 }
@@ -317,7 +323,7 @@ nav ul li a:hover::after{
 }*/
 .btn.btn2{
     display: inline-block;
-    background: #23c3f3;
+    background: #00A8F3;
     margin: 50px auto;
     width: fit-content;
     padding: 14px 50px;
@@ -353,7 +359,7 @@ form .btn2{
     width: 100%;
     text-align: center;
     padding: 10px 0;
-    background: #23c3f3;
+    background: #00A8F3;
     font-weight: 300;
     margin-top: 10px;
 }
@@ -380,7 +386,7 @@ nav .fa-solid{
         padding-top: 20px; 
     }
     .hi span{
-        color: #23c3f3;
+        color: #00A8F3;
 
     }
     .logo{
@@ -401,7 +407,7 @@ nav .fa-solid{
     }
     
     nav ul{
-        background: #23c3f3;
+        background: #00A8F3;
         position: fixed;
         top: 0;
         right: -200px;
